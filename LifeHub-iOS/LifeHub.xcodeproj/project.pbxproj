@@ -1,0 +1,208 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+/* Begin PBXBuildFile section */
+		1APPMAIN001 /* LifeHubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1APPMAIN000 /* LifeHubApp.swift */; };
+		1APPMAIN003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1APPMAIN002 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1APPMAIN000 /* LifeHubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeHubApp.swift; sourceTree = "<group>"; };
+		1APPMAIN001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1APPMAIN002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FRAME000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1GROUP000 = {
+			isa = PBXGroup;
+			children = (
+				1PROJ000 /* LifeHub */,
+				1PRODGRP /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1PROJ000 /* LifeHub */ = {
+			isa = PBXGroup;
+			children = (
+				1APPMAIN000 /* LifeHubApp.swift */,
+				1APPMAIN002 /* ContentView.swift */,
+				1APPMAIN001 /* Info.plist */,
+				1MODS000 /* Modules */,
+			);
+			path = LifeHub;
+			sourceTree = "<group>";
+		};
+		1MODS000 /* Modules */ = {isa = PBXGroup; children = (); path = Modules; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1TARGET000 /* LifeHub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CONF000 /* Build configuration list for PBXNativeTarget "LifeHub" */;
+			buildPhases = (
+				1SRC000 /* Sources */,
+				1FRAME000 /* Frameworks */,
+				1RES000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LifeHub;
+			productName = LifeHub;
+			productReference = 1PROD000 /* LifeHub.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1PROJECT /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = "LifeHub";
+				TargetAttributes = {
+					1TARGET000 = {
+						DevelopmentTeam = TEAMIDPLACEHOLDER;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1CONF001 /* Build configuration list for PBXProject "LifeHub" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1GROUP000;
+			productRefGroup = 1PRODGRP /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1TARGET000 /* LifeHub */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1RES000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1SRC000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1APPMAIN001 /* LifeHubApp.swift in Sources */,
+				1APPMAIN003 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXFileReference for product and misc */
+		1PROD000 /* LifeHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference for product */
+
+/* Begin PBXGroup Products */
+		1PRODGRP /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1PROD000 /* LifeHub.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup Products */
+
+/* Begin XCBuildConfiguration section */
+		1CONFDBG /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TEAMIDPLACEHOLDER;
+				PRODUCT_BUNDLE_IDENTIFIER = com.placeholder.lifehub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = LifeHub/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+			};
+			name = Debug;
+		};
+		1CONFREL /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TEAMIDPLACEHOLDER;
+				PRODUCT_BUNDLE_IDENTIFIER = com.placeholder.lifehub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = LifeHub/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+			};
+			name = Release;
+		};
+		1CONF000 /* Build configuration list for PBXNativeTarget "LifeHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CONFDBG /* Debug */,
+				1CONFREL /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CONFPRJDBG /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = TEAMIDPLACEHOLDER;
+				ORGANIZATION_NAME = LifeHub;
+			};
+			name = Debug;
+		};
+		1CONFPRJREL /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = TEAMIDPLACEHOLDER;
+				ORGANIZATION_NAME = LifeHub;
+			};
+			name = Release;
+		};
+		1CONF001 /* Build configuration list for PBXProject "LifeHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CONFPRJDBG /* Debug */,
+				1CONFPRJREL /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCBuildConfiguration section */
+	};
+	rootObject = 1PROJECT /* Project object */;
+}

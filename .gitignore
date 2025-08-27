@@ -1,0 +1,15 @@
+# Xcode
+DerivedData/
+build/
+*.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/xcshareddata/swiftpm/
+# SwiftPM
+.swiftpm/
+Packages/
+# User specifics
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+.DS_Store
