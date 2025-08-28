@@ -2,7 +2,7 @@ import Foundation
 
 /// High level app orchestrator: holds the GraphClient and exposes app-wide ops.
 public final class AppOrchestrator: ObservableObject {
-    public let client: GraphClient
+    public var client: GraphClient
     @Published public var autoSyncEnabled: Bool = false
 
     public init(client: GraphClient) {

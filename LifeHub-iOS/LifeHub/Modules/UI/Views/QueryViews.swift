@@ -23,6 +23,8 @@ public struct QueryView: View {
                     ForEach($vm.conditions) { $cond in
                         HStack {
                             TextField("field", text: $cond.field).textFieldStyle(.roundedBorder)
+                                .textInputAutocapitalization(.never)
+                                .autocorrectionDisabled(true)
                             Picker("", selection: $cond.op) {
                                 Text("=").tag(QueryPredicate.Op.equals)
                                 Text("≠").tag(QueryPredicate.Op.notEquals)

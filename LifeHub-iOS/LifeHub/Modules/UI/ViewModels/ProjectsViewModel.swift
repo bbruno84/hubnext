@@ -16,7 +16,7 @@ public final class ProjectsViewModel: ObservableObject {
     }
 
     public func createProject(title: String) async {
-        var e = Entity(type: "project", tags: [], payload: ["title": .string(title)])
+        let e = Entity(type: "project", tags: [], payload: ["title": .string(title)])
         do { _ = try await client.createEntity(e); await load() }
         catch { print("Create project failed: \(error)") }
     }
