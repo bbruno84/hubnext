@@ -57,5 +57,6 @@ public protocol GraphClientCapabilities {
     var capabilities: Capability { get }
 }
 
-/// Aggregated facade used by ViewModels.
-public typealias GraphClient = GraphClientCRUD & GraphClientRelations & GraphClientQuery & GraphClientSync & GraphClientCapabilities
+/// Aggregated facade used by ViewModels. Constrained to AnyObject so callers can mutate settable
+/// properties (e.g., autoSyncEnabled) through let references.
+public typealias GraphClient = AnyObject & GraphClientCRUD & GraphClientRelations & GraphClientQuery & GraphClientSync & GraphClientCapabilities
