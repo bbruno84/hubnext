@@ -1,0 +1,19 @@
+diff --git a/Modules/Core/GraphClient.swift b/Modules/Core/GraphClient.swift
+index 1111111..2222222 100644
+--- a/Modules/Core/GraphClient.swift
++++ b/Modules/Core/GraphClient.swift
+@@
+- public typealias GraphClient = GraphClientCRUD & GraphClientRelations & GraphClientQuery & GraphClientSync & GraphClientCapabilities
++ /// Aggregated facade used by ViewModels. Constrained to AnyObject so callers can mutate settable
++ /// properties (e.g., autoSyncEnabled) through let references.
++ public typealias GraphClient = AnyObject & GraphClientCRUD & GraphClientRelations & GraphClientQuery & GraphClientSync & GraphClientCapabilities
+diff --git a/LifeHub-iOS/LifeHub/Orchestrator.swift b/LifeHub-iOS/LifeHub/Orchestrator.swift
+index 3333333..4444444 100644
+--- a/LifeHub-iOS/LifeHub/Orchestrator.swift
++++ b/LifeHub-iOS/LifeHub/Orchestrator.swift
+@@
+-    public let client: AnyObject & GraphClientCRUD & GraphClientRelations & GraphClientQuery & GraphClientSync & GraphClientCapabilities
++    public let client: GraphClient
+@@
+-    public init(client: AnyObject & GraphClientCRUD & GraphClientRelations & GraphClientQuery & GraphClientSync & GraphClientCapabilities) {
++    public init(client: GraphClient) {

@@ -67,7 +67,9 @@ public final class InMemoryGraphClient: GraphClient {
         }
         for p in predicates {
             result = result.filter { e in
-                guard let v = e.payload[p.field] else { return false }
+                // case-insensitive field matching
+                let key = e.payload.keys.first { $0.caseInsensitiveCompare(p.field) == .orderedSame } ?? p.field
+                guard let v = e.payload[key] else { return false }
                 switch p.op {
                 case .equals: return v == p.value
                 case .notEquals: return v != p.value
