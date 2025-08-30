@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct LifeHubApp: App {
+struct HubNextApp: App {
     private let client: GraphClient
     @StateObject private var orchestrator: AppOrchestrator
 
