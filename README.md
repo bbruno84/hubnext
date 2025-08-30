@@ -1,4 +1,4 @@
-# LifeHub — MVP (iOS + modular code for SPM extraction)
+# HubNext — MVP (iOS + modular code for SPM extraction)
 
 This archive contains a **working iOS Xcode project** for LifeHub (SwiftUI, iOS 16),
 plus a modular folder structure (`Modules/Core`, `Modules/UI`, `Modules/Platform`) ready
@@ -7,8 +7,8 @@ a **functional, clean architecture (MVVM + light coordinators)** with a **Develo
 (seed, toggles, console log).
 
 > Placeholders:
-> - Bundle ID: `com.placeholder.lifehub`
-> - iCloud Container: `iCloud.com.placeholder.lifehub`
+> - Bundle ID: `com.placeholder.hubnext`
+> - iCloud Container: `iCloud.com.placeholder.hubnext`
 > - Team ID: `TEAMIDPLACEHOLDER`
 
 ## What’s included (MVP)
